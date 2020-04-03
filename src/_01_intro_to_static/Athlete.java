@@ -1,31 +1,36 @@
 package _01_intro_to_static;
 
 public class Athlete {
-	    static int nextBibNumber;
-	    static String raceLocation = "New York";
-	    static String raceStartTime = "9.00am";
+	static String raceLocation = "New York";
+	static String raceStartTime = "9.00am";
+	static String name1;
+	static String name2;
+	static int speed1;
+	static int speed2;
+	static int bibNumber = 1;
+	static int nextBibNumber = bibNumber + 1;
 
-	     static String name;
-	     static int speed;
-	     static int bibNumber;
+	private static void Athlete1(String name1, int speed1) {
+		
+	}
+	public static void Athlete2 (String name2, int speed3) {
+		
+	}
 
-	    Athlete (String name, int speed, int bibNumber){
-	        this.name = name;
-	        this.speed = speed;
-	        this.bibNumber = bibNumber;
-	    }
+	public static void main(String[] args) {
+		// create two athletes
+		// print their names, bibNumbers, and the location of their race.
+		Athlete1("Jeff", 5);
+		System.out.println(name1);
+		System.out.println(speed1);
+		System.out.println(bibNumber);
+		System.out.println(raceLocation);
+		Athlete2("John", 5);
+		System.out.println(name2);
+		System.out.println(nextBibNumber);
+		System.out.println(raceLocation);
 
-	    public static void main(String[] args) {
-	        //create two athletes
-	        //print their names, bibNumbers, and the location of their race. 
-	    	Athlete("Jeff", 5, 21);
-	    	System.out.println(name);
-	    	System.out.println(bibNumber);
-	    	System.out.println(raceLocation);
-	    	Athlete("John", 5, 22);
-	    	System.out.println(name);
-	    	System.out.println(bibNumber);
-	    	System.out.println(raceLocation);
-	    	
-	    }
+	}
+
 }
+ 
