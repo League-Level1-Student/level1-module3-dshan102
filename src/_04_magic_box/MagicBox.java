@@ -29,14 +29,15 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	 * 2. When the mouse is clicked, use the Media Palace (read the code in the magic_box package) to play sounds, 
 	 *    show images or speak.
 	 * 
+	 * Ask about how many actions need to be performed and when they should be played
+	 * 
 	 * 3. Choose 3 different locations on the background image.You can either use the mouse position, 
 	 *    or the color of the image, then decide what action the Media Palace should take in each case. 
 	 *     backgroundImage.getRGB(e.getX(), e.getY()) will give you the color of the current pixel.
 	 */
 
 	BufferedImage backgroundImage;
-
-
+	
 	@Override
 	public void run() {
 		try {
