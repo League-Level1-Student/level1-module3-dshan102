@@ -87,7 +87,7 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 		else if(e.getX()==547 && e.getY()==363) {
 			m.loadSound("Ta Da-SoundBible.com-1884170640.wav");
 		}
-		
+	//Ask about sounds and image (How to make them work)	
 	}
 
 	@Override
