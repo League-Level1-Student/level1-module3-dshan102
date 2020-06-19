@@ -15,6 +15,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
@@ -81,13 +82,22 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 		if(e.getX()==339 && e.getY()==170) {
 			m.speak("Yay");
 		}
-		else if(e.getX()==347 && e.getY()==657) {
-			m.loadImageFromWithinProject("thumbs-up.png");
+		if((e.getX()==347 && (e.getY()==657))) {
+		System.out.println("Does this work");
+			JFrame frame1 = new JFrame("Congratulations");
+			JLabel label = m.loadImageFromWithinProject("thumbs_up.png");
+			frame1.add(label);
+			JPanel panel = new JPanel();
+			panel.add(label);
+			frame1.add(panel);
+			frame1.pack();
+			frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame1.setVisible(true);
 		}
-		else if(e.getX()==547 && e.getY()==363) {
-			m.loadSound("Ta Da-SoundBible.com-1884170640.wav");
+		if(e.getX()==547 && e.getY()==363) {
+			m.playMusicOnComputer("Ta Da-SoundBible.com-1884170640.mp3");
 		}
-	//Ask about sounds and image (How to make them work)	
+		
 	}
 
 	@Override
